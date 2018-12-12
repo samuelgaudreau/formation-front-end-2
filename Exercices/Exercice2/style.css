@@ -22,10 +22,6 @@ div, img {
     display: block;
 }
 
-:root {
-    --primaryColor: #FF725C;
-}
-
 .calendar-zone {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -38,16 +34,15 @@ div, img {
 }
 
 .primary-color {
-    color: var(--primaryColor);
+    color: #FF725C;
 }
 
 .date {
-    --dateDimension: 1.75em;
-    width: var(--dateDimension);
-    height: var(--dateDimension);
+    width: 1.75em;
+    height: 1.75em;
     cursor: default;
     font-size: 1em;
-    line-height: var(--dateDimension);
+    line-height: 1.75em;
     text-align: center;
     transition: background-color .2s ease, color .4s ease-in;
     border-radius: 100%;
@@ -55,10 +50,6 @@ div, img {
 }
 
 /* add the small dots under the dates (#E7040F for notif, #001B44 for busy) pseudo element */
-
-:root {
-    --dotOffset: -2px;
-}
 
 .date-busy::before, .date-notif::before {
     content: "";
@@ -69,8 +60,6 @@ div, img {
     position: absolute;
     bottom: -8px;
     left: 50%;
-    transform: translateX(var(--dotOffset) rotate(0));
-    transform-origin: 0 -1em;
 }
 
 .date-notif::before {
@@ -81,18 +70,20 @@ div, img {
     background-color: #001B44;
 }
 
+/* when a user hover the day name row scale the current day name, rotate it a little and make the row #FFDFDF */
+
 /* add a transition (a #FF725C round highlight) when hovering a date except the non february ones */
 
 .date:not(.date-disabled):hover, .date-current {
     color: #FFF;
-    background-color: var(--primaryColor);
+    background-color: #FF725C;
 }
 
 /* make sure its accessible */
 
 .date:not(.date-disabled):focus {
     color: #FFF;
-    background-color: var(--primaryColor);
+    background-color: #FF725C;
 }
 
 /* Make the small dot shake on hover/focus */
