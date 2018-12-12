@@ -40,44 +40,14 @@ div, img {
 .date {
     width: 1.75em;
     height: 1.75em;
-    cursor: default;
     font-size: 1em;
-    line-height: 1.75em;
-    text-align: center;
-    transition: background-color .2s ease, color .4s ease-in;
-    border-radius: 100%;
-    position: relative;
 }
 
 /* add the small dots under the dates (#E7040F for notif, #001B44 for busy) pseudo element */
 
-.date-busy::before, .date-notif::before {
-    content: "";
-    display: block;
-    width: .25em;
-    height: .25em;
-    border-radius: 100%;
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-}
-
-.date-notif::before {
-    background-color: #E7040F;
-}
-
-.date-busy::before {
-    background-color: #001B44;
-}
-
 /* when a user hover the day name row scale the current day name, rotate it a little and make the row #FFDFDF */
 
 /* add a transition (a #FF725C round highlight) when hovering a date except the non february ones */
-
-.date-current {
-    color: #FFF;
-    background-color: #FF725C;
-}
 
 /* make sure its accessible */
 
