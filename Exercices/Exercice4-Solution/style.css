@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+div {
+    display: block;
+}
+
+.frame {
+    border-radius: 2px;
+    width: 400px;
+    background: linear-gradient(to top right, #43389F, rgb(173, 116, 211));
+    height: 400px;
+    transition: all .3s ease-in;
+    padding: 20px;
+}
+
+/* make me dizzy */
+
+:root {
+    --angle: 3deg;
+    --scale: 2;
+}
+
+.dizzy {
+    padding: 12px;
+    background: #43389F;
+    transform: rotate(var(--angle)) scale(var(--scale));
+    transition: all .2s ease-in-out;
+}
+
+/* make me dizzier on hover */
+
+.dizzy:hover {
+    --scale: 1.3;
+}

@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+div {
+    display: block;
+}
+
+.frame {
+    border-radius: 2px;
+    width: 400px;
+    background: linear-gradient(to top right, #43389F, rgb(173, 116, 211));
+    height: 400px;
+    padding: 20px;
+}
+
+/* add a transition on hover */
+
+button {
+    padding: 14px;
+    background: peachpuff;
+    color: salmon;
+    font-size: 2em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: peachpuff;
+    background: salmon;
+}
