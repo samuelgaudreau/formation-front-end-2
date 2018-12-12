@@ -64,33 +64,6 @@
             </div>
         </div>
     </div>
-    <div class="mt6">
-        <div class="picker flex mb2">
-            <input type="text" placeholder="#hex" class="br2 h2 ba b--gray color-picker-input pa2 mr2">
-            <button class="br2 bn h2 bg-light-red white color-picker">Set primary color</button>
-        </div>
-        <div class="picker flex">
-            <input type="text" placeholder="#hex" class="br2 h2 ba b--gray paper-color-picker-input pa2 mr2">
-            <button class="br2 bn h2 bg-light-red white paper-color-picker">Set paper color</button>
-        </div>
-    </div>
-    <script>
-        const calendar = document.querySelector(".calendar");
-        const colorPicker = document.querySelector(".color-picker");
-        const paperColorPicker = document.querySelector(".paper-color-picker");
-        const root = document.documentElement;
-        colorPicker.addEventListener("click", () => {
-            const pickedColor = document.querySelector(".color-picker-input");
-            root.style.setProperty("--primaryColor", pickedColor.value);
-        });
-        paperColorPicker.addEventListener("click", () => {
-            const pickedColor = document.querySelector(".paper-color-picker-input");
-            root.style.setProperty("--paperColor", pickedColor.value);
-        });
-        calendar.addEventListener("click", (e) => {
-            calendar.classList.toggle("animated");
-        });
-    </script>
 </body>
 
 </html>

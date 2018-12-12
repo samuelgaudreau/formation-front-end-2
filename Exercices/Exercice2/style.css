@@ -24,15 +24,6 @@ div, img {
 
 :root {
     --primaryColor: #FF725C;
-    --paperColor: #FFF;
-}
-
-.calendar.animated {
-    animation: 1s slideIn ease-in;
-}
-
-.calendar-paper {
-    background-color: var(--paperColor);
 }
 
 .calendar-zone {
@@ -106,47 +97,6 @@ div, img {
 
 /* Make the small dot shake on hover/focus */
 
-.date:not(.date-disabled):hover::before, .date:not(.date-disabled):focus::before {
-    animation: cubic-bezier(0.1, -0.6, 0.2, 0) .2s shake;
-}
-
-/* Shake */
-
-@keyframes shake {
-    0% {
-        transform: translateX(var(--dotOffset)) rotate(0);
-    }
-    33% {
-        transform: translateX(var(--dotOffset)) rotate(20deg);
-    }
-    66% {
-        transform: translateX(var(--dotOffset)) rotate(-20deg);
-    }
-    100% {
-        transform: translateX(var(--dotOffset)) rotate(0);
-    }
-}
-
 /* use variables where it makes sense */
 
 /* animate the card on click */
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(0) rotate(0);
-        opacity: 1;
-    }
-    33% {
-        transform: translateX(-100px) rotate(20deg);
-    }
-    50% {
-        opacity: 0;
-    }
-    66% {
-        transform: translateX(100px) rotate(-20deg);
-    }
-    100% {
-        transform: translateX(0) rotate(0);
-        opacity: 0;
-    }
-}
