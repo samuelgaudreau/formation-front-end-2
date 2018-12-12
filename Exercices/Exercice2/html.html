@@ -4,14 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.css">
     <link rel="stylesheet" href="style.css">
     <title>Transitions</title>
 </head>
 
 <body>
-    <div class="frame">
-        <button>The button!</button>
+    <div class="calendar flex shadow-2">
+        <div class="calendar-illustration flex">
+            <div class="calendar-illustration__item">
+                <img src="calendar-illu.png" alt="Snow">
+            </div>
+        </div>
+        <div class="calendar-paper ph4 pv5">
+            <h1 class=" ttu primary-color pa0 ma0 mb4 fw6 tracked-tight">February</h1>
+            <div class="calendar-zone">
+                <span class="day primary-color ttu f6">Sun</span>
+                <span class="day primary-color ttu f6">Mon</span>
+                <span class="day primary-color ttu f6 fw6">Tue</span>
+                <span class="day primary-color ttu f6">Wed</span>
+                <span class="day primary-color ttu f6">Thu</span>
+                <span class="day primary-color ttu f6">Fri</span>
+                <span class="day primary-color ttu f6">Sat</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">27</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">28</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">29</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">30</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">31</span>
+                <span tabindex="1" class="date mid-gray">1</span>
+                <span tabindex="1" class="date mid-gray">2</span>
+                <span tabindex="1" class="date mid-gray">3</span>
+                <span tabindex="1" class="date mid-gray">4</span>
+                <span tabindex="1" class="date date-current mid-gray">5</span>
+                <span tabindex="1" class="date mid-gray">6</span>
+                <span tabindex="1" class="date mid-gray">7</span>
+                <span tabindex="1" class="date mid-gray">8</span>
+                <span tabindex="1" class="date mid-gray">9</span>
+                <span tabindex="1" class="date mid-gray">10</span>
+                <span tabindex="1" class="date mid-gray">11</span>
+                <span tabindex="1" class="date mid-gray">12</span>
+                <span tabindex="1" class="date date-notif mid-gray">13</span>
+                <span tabindex="1" class="date mid-gray">14</span>
+                <span tabindex="1" class="date date-busy mid-gray">15</span>
+                <span tabindex="1" class="date mid-gray">16</span>
+                <span tabindex="1" class="date date-notif mid-gray">17</span>
+                <span tabindex="1" class="date mid-gray">18</span>
+                <span tabindex="1" class="date mid-gray">19</span>
+                <span tabindex="1" class="date mid-gray">20</span>
+                <span tabindex="1" class="date mid-gray">21</span>
+                <span tabindex="1" class="date mid-gray">22</span>
+                <span tabindex="1" class="date mid-gray">23</span>
+                <span tabindex="1" class="date mid-gray">24</span>
+                <span tabindex="1" class="date mid-gray">25</span>
+                <span tabindex="1" class="date mid-gray">26</span>
+                <span tabindex="1" class="date mid-gray">27</span>
+                <span tabindex="1" class="date mid-gray">28</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">1</span>
+                <span tabindex="1" class="date light-silver date-disabled o-40">2</span>
+            </div>
+        </div>
     </div>
+    <div class="mt6">
+        <div class="picker flex mb2">
+            <input type="text" placeholder="#hex" class="br2 h2 ba b--gray color-picker-input pa2 mr2">
+            <button class="br2 bn h2 bg-light-red white color-picker">Set primary color</button>
+        </div>
+        <div class="picker flex">
+            <input type="text" placeholder="#hex" class="br2 h2 ba b--gray paper-color-picker-input pa2 mr2">
+            <button class="br2 bn h2 bg-light-red white paper-color-picker">Set paper color</button>
+        </div>
+    </div>
+    <script>
+        const calendar = document.querySelector(".calendar");
+        const colorPicker = document.querySelector(".color-picker");
+        const paperColorPicker = document.querySelector(".paper-color-picker");
+        const root = document.documentElement;
+        colorPicker.addEventListener("click", () => {
+            const pickedColor = document.querySelector(".color-picker-input");
+            root.style.setProperty("--primaryColor", pickedColor.value);
+        });
+        paperColorPicker.addEventListener("click", () => {
+            const pickedColor = document.querySelector(".paper-color-picker-input");
+            root.style.setProperty("--paperColor", pickedColor.value);
+        });
+        calendar.addEventListener("click", (e) => {
+            calendar.classList.toggle("animated");
+        });
+    </script>
 </body>
 
 </html>
