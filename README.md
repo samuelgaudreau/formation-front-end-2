@@ -28,7 +28,7 @@ Chaque branche contient la solution de l'exercice précédent.
 ### Exercice 1
 Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce faire, vous devez :
 
-1- Ajouter une pastille rouge (#E7040F) autour du jour courrant (.date-current) et centrer le contenu de celui-ci.
+1- Ajouter une pastille rouge (#E7040F) autour du jour courrant (.date-current).
 
 2- Ajouter les points rouges (#E7040F) en dessous des dates contenant des notifications (.date-notif).
 
@@ -44,17 +44,16 @@ Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce 
 3- Le texte devrait changer de couleur plus rapidement que le fond.
 
 ### Exercice 2
-Le but de cet exercice est de sa familiariser avec ???
+Le but de cet exercice est de sa familiariser avec les CSS Transforms. Pour ce faire, vous devez:
 
+1- Centrer le contenu de la pastille du jour courrant en utilisant la proprités transform. 
+
+Bonus : pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui sont utilisées à plusieurs reprises (ex: la couleur primaire #FF725C, etc.)
 
 ### Exercice 3
-
-
-
-### Exercice 4 
 Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite :
 
-1- Ajouter le snippet suivant entre les lignes 66/67 du fichier `html`:
+1- Ajouter le snippet suivant entre les lignes 66/67 du fichier `html.html`:
 
 ```
 <div class="mt6">
@@ -77,8 +76,10 @@ Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce fa
 
     /* add listener on the click event of the paperColorPicker to change the paper color */
 
-    /* add listener on the click event of the calendar in order to animate the natural page change */
+    /* BONUS : add listener on the click event of the calendar in order to animate the natural page change */
 </script>
 ```
 
 2- À l'aide de variables CSS, modifier les deux couleurs dans les différents event listener. 
+
+Bonus : animer le calendrier lorsqu'on clique dessus pour qu'il disparaisse de manière "naturelle".
