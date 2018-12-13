@@ -22,12 +22,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 Inspiration : https://dribbble.com/shots/5682803-February
 
 Tous les exercices se retrouvent sous les répertoires appropriés. Par exemple :
+```
 Exercice 1
 + html.html
 + style.css
 Exercice 1 - Solution
 + html.html
 + style.css
+```
 
 ### Exercice #1
 Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce faire, vous devez :
