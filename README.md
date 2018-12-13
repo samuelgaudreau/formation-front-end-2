@@ -33,6 +33,19 @@ Exercice 1 - Solution
 
 ### Exercice #1
 Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce faire, vous devez :
+
 1- Ajouter les points rouges (#E7040F) en dessous du 2 et du 12 février.
+
 2- Ajouter les points noirs (#001B44) en dessous du 3 et du 22 février.
+
 3- Ajouter une pastille rouge autour du 5 février pour signifier la journée "courante".
+
+
+### Exercice #1.5
+Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce faire, vous devez :
+
+1- Sur hover des dates du mois courant ajouter un cercle rouge (#E7040F) derrière la date, et afficher le texte en blanc.
+
+2- Assurez-vous que la transition n'est par 0 - 1 mais smooth.
+
+3- Le texte devrait changer de couleur plus rapidement que le fond.
