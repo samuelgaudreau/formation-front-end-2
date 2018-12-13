@@ -21,15 +21,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 ## Exercices
 Inspiration : https://dribbble.com/shots/5682803-February
 
-Tous les exercices se retrouvent sous les répertoires appropriés. Par exemple :
-```
-Exercice 1
-+ html.html
-+ style.css
-Exercice 1 - Solution
-+ html.html
-+ style.css
-```
+Chaque exercice est basé sur une des différentes branche de ce repo. Le premier exercice commence sur la branche 1.0 et l'exercice 2 sur la branche 2.0.
+
+Chaque branche contient la solution de l'exercice précédent.
 
 ### Exercice #1
 Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce faire, vous devez :
