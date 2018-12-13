@@ -107,7 +107,7 @@ div, img {
 /* Make the small dot shake on hover/focus */
 
 .date:not(.date-disabled):hover::before, .date:not(.date-disabled):focus::before {
-    animation: cubic-bezier(0.1, -0.6, 0.2, 0) .2s shake;
+    animation: shake 4s cubic-bezier(0, 0, 1, 1) infinite;
 }
 
 #snow-front {
@@ -126,28 +126,32 @@ div, img {
     animation: snow 10s linear infinite;
 }
 
+/* snow */
+
 @keyframes snow {
     0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
     50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
     100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
   }
 
-
 /* Shake */
 
 @keyframes shake {
     0% {
-        transform: translateX(var(--dotOffset)) rotate(0);
-    }
-    33% {
-        transform: translateX(var(--dotOffset)) rotate(20deg);
-    }
-    66% {
-        transform: translateX(var(--dotOffset)) rotate(-20deg);
-    }
-    100% {
-        transform: translateX(var(--dotOffset)) rotate(0);
-    }
+        transform: rotate(0deg);
+      }
+    
+      30% {
+        transform: rotate(90deg);
+      }
+    
+      70% {
+        transform: rotate(180deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
 }
 
 /* use variables where it makes sense */
