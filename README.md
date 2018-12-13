@@ -25,7 +25,7 @@ Chaque exercice est basé sur une des différentes branche de ce repo. Le premie
 
 Chaque branche contient la solution de l'exercice précédent.
 
-### Exercice #1
+### Exercice 1
 Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce faire, vous devez :
 
 1- Ajouter une pastille rouge (#E7040F) autour du jour courrant (.date-current) et centrer le contenu de celui-ci.
@@ -34,7 +34,7 @@ Le but de cet exercice est de se familiariser avec les pseudo elements. Pour ce 
 
 3- Ajouter les points noirs (#001B44) en dessous des dates flaggées comme "busy" (.data-busy).
 
-### Exercice #1.5
+### Exercice 1.5
 Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce faire, vous devez :
 
 1- Sur hover des dates du mois courant ajouter un cercle rouge (#E7040F) derrière la date, et afficher le texte en blanc.
@@ -42,3 +42,43 @@ Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce 
 2- Assurez-vous que la transition n'est par 0 - 1 mais smooth.
 
 3- Le texte devrait changer de couleur plus rapidement que le fond.
+
+### Exercice 2
+Le but de cet exercice est de sa familiariser avec ???
+
+
+### Exercice 3
+
+
+
+### Exercice 4 
+Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite :
+
+1- Ajouter le snippet suivant entre les lignes 66/67 du fichier `html`:
+
+```
+<div class="mt6">
+    <div class="picker flex mb2">
+        <input type="text" placeholder="#hex" class="br2 h2 ba b--gray color-picker-input pa2 mr2">
+        <button class="br2 bn h2 bg-light-red white color-picker">Set primary color</button>
+    </div>
+    <div class="picker flex">
+        <input type="text" placeholder="#hex" class="br2 h2 ba b--gray paper-color-picker-input pa2 mr2">
+        <button class="br2 bn h2 bg-light-red white paper-color-picker">Set paper color</button>
+    </div>
+</div>
+<script>
+    const calendar = document.querySelector(".calendar");
+    const colorPicker = document.querySelector(".color-picker");
+    const paperColorPicker = document.querySelector(".paper-color-picker");
+    const root = document.documentElement;
+
+    /* add listener on the click event of the colorPicker to change the primary color */
+
+    /* add listener on the click event of the paperColorPicker to change the paper color */
+
+    /* add listener on the click event of the calendar in order to animate the natural page change */
+</script>
+```
+
+2- À l'aide de variables CSS, modifier les deux couleurs dans les différents event listener. 
