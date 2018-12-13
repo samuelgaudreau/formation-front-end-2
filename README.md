@@ -47,8 +47,7 @@ Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce 
 Le but de cet exercice est de sa familiariser avec les CSS Transforms. Pour ce faire, vous devez:
 
 1- Centrer le contenu de la pastille du jour courrant en utilisant la proprités transform. 
-
-Bonus : pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui sont utilisées à plusieurs reprises (ex: la couleur primaire #FF725C, etc.)
+2- Mettre ... 
 
 ### Exercice 3
 Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite :
@@ -81,5 +80,11 @@ Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce fa
 ```
 
 2- À l'aide de variables CSS, modifier les deux couleurs dans les différents event listener. 
+
+Pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui sont utilisées à plusieurs reprises
+
+### Exercice 4
+
+
 
 Bonus : animer le calendrier lorsqu'on clique dessus pour qu'il disparaisse de manière "naturelle".
