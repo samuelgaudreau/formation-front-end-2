@@ -110,6 +110,29 @@ div, img {
     animation: cubic-bezier(0.1, -0.6, 0.2, 0) .2s shake;
 }
 
+#snow-front {
+    top:0;
+    left:0;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+    z-index: 1000;
+    animation: snow 10s linear infinite;
+}
+
+#snow-deep {
+    top:0;
+    left:0;
+    background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+    z-index: 1000;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+
+
 /* Shake */
 
 @keyframes shake {
