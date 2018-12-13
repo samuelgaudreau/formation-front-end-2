@@ -1,24 +1,24 @@
 # Formation front end 2
 
-## Sujets abordés
+#### Sujets abordés
 
-### Pseudo elements
+##### Pseudo elements
 https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 
-### CSS Transitions
+##### CSS Transitions
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 
-### CSS Transforms
+##### CSS Transforms
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 
-### Custom properties (--*)
+##### Custom properties (--*)
 https://developer.mozilla.org/en-US/docs/Web/CSS/--*
 
-### CSS Animations
+##### CSS Animations
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 
 
-## Exercice
+## Exercices
 Inspiration : https://dribbble.com/shots/5682803-February
 
 Tous les exercices se retrouvent sous les répertoires appropriés. Par exemple :
