@@ -59,13 +59,8 @@ div, img {
     position: relative;
 }
 
-/* add the small dots under the dates (#E7040F for notif, #001B44 for busy) pseudo element */
-
-:root {
-    --dotOffset: -2px;
-}
-
 .date-busy::before, .date-notif::before {
+    --dotOffset: -2px;
     content: "";
     display: block;
     width: .25em;
@@ -86,14 +81,10 @@ div, img {
     background-color: #001B44;
 }
 
-/* add a transition (a #FF725C round highlight) when hovering a date except the non february ones */
-
 .date:not(.date-disabled):hover, .date-current {
     color: #FFF;
     background-color: var(--primaryColor);
 }
-
-/* make sure its accessible */
 
 .date:not(.date-disabled):focus {
     color: #FFF;
@@ -101,3 +92,5 @@ div, img {
 }
 
 /* Make the small dot shake on hover/focus */
+
+/* Make the calendar behave on click */
