@@ -107,7 +107,7 @@ div, img {
 /* Make the small dot shake on hover/focus */
 
 .date:not(.date-disabled):hover::before, .date:not(.date-disabled):focus::before {
-    animation: shake 4s cubic-bezier(0, 0, 1, 1) infinite;
+    animation: shake 2s linear infinite;
 }
 
 #snow-front {
@@ -138,19 +138,19 @@ div, img {
 
 @keyframes shake {
     0% {
-        transform: rotate(0deg);
+        transform: translateY(0) rotate(0deg);
       }
     
       30% {
-        transform: rotate(90deg);
+        transform: translateY(-1px) rotate(90deg);
       }
     
       70% {
-        transform: rotate(180deg);
+        transform: translateY(-3px) rotate(180deg);
       }
     
       100% {
-        transform: rotate(360deg);
+        transform:  translateY(0) rotate(360deg);
       }
 }
 
