@@ -70,24 +70,12 @@ div, img {
     background-color: #001B44;
 }
 
-/* when a user hover the day name row scale the current day name, rotate it a little and make the row #FFDFDF */
-
-/* add a transition (a #FF725C round highlight) when hovering a date except the non february ones */
-
 .date:not(.date-disabled):hover, .date-current {
     color: #FFF;
     background-color: #FF725C;
 }
 
-/* make sure its accessible */
-
 .date:not(.date-disabled):focus {
     color: #FFF;
     background-color: #FF725C;
 }
-
-/* Make the small dot shake on hover/focus */
-
-/* use variables where it makes sense */
-
-/* animate the card on click */
