@@ -46,8 +46,8 @@ Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce 
 ### Exercice 2
 Le but de cet exercice est de sa familiariser avec les CSS Transforms. Pour ce faire, vous devez:
 
-1- Centrer le contenu de la pastille du jour courrant en utilisant la proprités transform. 
-2- Mettre ... 
+1- Centrer le contenu de la pastille du jour courant en utilisant la proprités transform. 
+2- Donner un angle de 5 deg et un scale de 1.2 au TUESDAY, au hover donner un scale de 1
 
 ### Exercice 3
 Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite :
@@ -71,11 +71,10 @@ Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce fa
     const paperColorPicker = document.querySelector(".paper-color-picker");
     const root = document.documentElement;
 
-    /* add listener on the click event of the colorPicker to change the primary color */
+    /* add listener on the click event of the colorPicker and change the primary color */
 
-    /* add listener on the click event of the paperColorPicker to change the paper color */
+    /* add listener on the click event of the paperColorPicker and change the paper color */
 
-    /* BONUS : add listener on the click event of the calendar in order to animate the natural page change */
 </script>
 ```
 
