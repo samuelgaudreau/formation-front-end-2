@@ -44,15 +44,3 @@ div, img {
 }
 
 /* add the small dots under the dates (#E7040F for notif, #001B44 for busy) pseudo element */
-
-/* when a user hover the day name row scale the current day name, rotate it a little and make the row #FFDFDF */
-
-/* add a transition (a #FF725C round highlight) when hovering a date except the non february ones */
-
-/* make sure its accessible */
-
-/* Make the small dot shake on hover/focus */
-
-/* use variables where it makes sense */
-
-/* animate the card on click */
