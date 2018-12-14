@@ -92,8 +92,8 @@ Ajouter une tempête de neige à la partie gauche du calendrier.
 
 Conseil: Utilisez la propriété "background-image" combiné avec une animation par @keyframe
 
-Snow1 https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png
-Snow2 https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png 
+snow-front https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png
+snow-deep https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png 
 
 Mettre ce snippet 
 après la classe calendar-illu.png
