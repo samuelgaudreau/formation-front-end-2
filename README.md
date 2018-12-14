@@ -47,10 +47,11 @@ Le but de cet exercice est de se familiariser avec les transitions CSS. Pour ce 
 Le but de cet exercice est de sa familiariser avec les CSS Transforms. Pour ce faire, vous devez:
 
 1- Centrer le contenu de la pastille du jour courant en utilisant la proprités transform. 
+
 2- Donner un angle de 5 deg et un scale de 1.2 au TUESDAY, au hover donner un scale de 1
 
 ### Exercice 3
-Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite :
+Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce faire, vous devez checkout la branche `3.0` et ensuite:
 
 1- Ajouter le snippet suivant entre les lignes 66/67 du fichier `html.html`:
 
@@ -83,7 +84,7 @@ Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce fa
 Pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui sont utilisées à plusieurs reprises
 
 ### Exercice 4
-Lorsque l'on hover sur une date clé (avec un point dessous) animez le point
+Lorsque l'on hover sur une date clé (avec un point dessous) animez le point.
 
 Bonus : animer le calendrier lorsqu'on clique dessus pour qu'il disparaisse de manière "naturelle".
 
@@ -93,10 +94,11 @@ Ajouter une tempête de neige à la partie gauche du calendrier.
 Conseil: Utilisez la propriété "background-image" combiné avec une animation par @keyframe
 
 snow-front https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png
+
 snow-deep https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png 
 
-Mettre ce snippet 
-après la classe calendar-illu.png
+Mettre ce snippet après la classe calendar-illu.png
+
 ```
 <div class="calendar-illustration__item">
     <img src="calendar-illu.png" alt="Snow">
