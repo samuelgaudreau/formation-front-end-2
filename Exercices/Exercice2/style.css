@@ -91,6 +91,43 @@ div, img {
     background-color: var(--primaryColor);
 }
 
-/* Make the small dot shake on hover/focus */
+.date:not(.date-disabled):hover::before, .date:not(.date-disabled):focus::before {
+    animation: shake 4s cubic-bezier(0, 0, 1, 1) infinite;
+}
 
-/* Make the calendar behave on click */
+/* Shake */
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(90deg);
+    }
+    70% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+    33% {
+        transform: translateX(-100px) rotate(20deg);
+    }
+    50% {
+        opacity: 0;
+    }
+    66% {
+        transform: translateX(100px) rotate(-20deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0);
+        opacity: 0;
+    }
+}
