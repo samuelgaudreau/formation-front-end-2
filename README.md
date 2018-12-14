@@ -84,7 +84,6 @@ Le but de cet exercice est de se familiariser avec les variables CSS. Pour ce fa
 Pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui sont utilisées à plusieurs reprises
 
 ### Exercice 4
-
-
+Lorsque l'on hover sur une date clé (avec un point dessous) animez le point
 
 Bonus : animer le calendrier lorsqu'on clique dessus pour qu'il disparaisse de manière "naturelle".
