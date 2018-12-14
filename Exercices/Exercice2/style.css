@@ -27,8 +27,13 @@ div, img {
     --paperColor: #FFF;
 }
 
+.calendar {
+    transform-origin: 50% 0;
+}
+
 .calendar-paper {
     background-color: var(--paperColor);
+
 }
 
 .calendar-zone {
@@ -40,6 +45,10 @@ div, img {
 
 .calendar-illustration {
     max-width: 300px;
+}
+
+.calendar.animated {
+    animation: 4s slideIn linear;
 }
 
 .primary-color {
@@ -68,8 +77,7 @@ div, img {
     border-radius: 100%;
     position: absolute;
     bottom: -8px;
-    left: 50%;
-    transform: translateX(var(--dotOffset) rotate(0));
+    left: 50%;  
     transform-origin: 0 -1em;
 }
 
@@ -118,21 +126,24 @@ div, img {
 
 @keyframes slideIn {
     0% {
-        transform: translateX(0) rotate(0);
+        transform:  rotate(0deg);
         opacity: 1;
     }
     33% {
-        transform: translateX(-100px) rotate(20deg);
+        transform:  rotate(20deg);
+        opacity:0.5
     }
     50% {
+        transform:  rotate(40deg);
         opacity: 0;
     }
     66% {
-        transform: translateX(100px) rotate(-20deg);
+        transform:  rotate(20deg);
+        opacity: 0.5;
     }
     100% {
-        transform: translateX(0) rotate(0);
-        opacity: 0;
+        transform:  rotate(0deg);
+        opacity: 1;
     }
 }
 
