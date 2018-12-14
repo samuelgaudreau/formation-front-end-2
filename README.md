@@ -86,3 +86,8 @@ Pratiquez vous avec les CSS properties afin de réutiliser certaines valeurs qui
 Lorsque l'on hover sur une date clé (avec un point dessous) animez le point
 
 Bonus : animer le calendrier lorsqu'on clique dessus pour qu'il disparaisse de manière "naturelle".
+
+### Exercice 5
+Ajouter une tempête de neige à la partie gauche du calendrier.
+
+Conseil: Utilisez la propriété "background-image" combiné avec une animation par @keyframe
